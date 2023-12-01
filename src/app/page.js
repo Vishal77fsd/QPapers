@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import CountDown from "@/components/CountDown";
 import Home from "@/components/Home";
+import GovernmentExam from "@/components/GovernmentExam";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Get All Previous Papers Here",
@@ -17,6 +19,10 @@ const page = () => {
       <Home />
       <div>
         <CountDown />
+        <GovernmentExam />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

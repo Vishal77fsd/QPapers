@@ -4,11 +4,13 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <h1 className="font-sans font-bold text-center text-[80px] mt-20 ">
-        GET ALL YOUR{" "}
+      <h1 className="font-sans font-bold text-center text-[70px] mt-20 ">
+        GET ALL YOUR
+        <br />
         <span className="bg-slate-800 p-2 rounded-md shadow-lg  shadow-slate-900">
-          ENTRANCE EXAM{" "}
+          ENTRANCE EXAM
         </span>
+        <br />
         COUNTDOWN HERE
       </h1>
 

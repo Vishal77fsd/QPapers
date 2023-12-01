@@ -12,24 +12,26 @@ const CountDown = () => {
   }
   const today = new Date();
   const examDate = new Date("2024-06-26");
-  const daysUntilExam = dateDiff(today, examDate);
+  let daysUntilExam = dateDiff(today, examDate);
 
-  let upscexamDate = new Date("2024-02-24");
+  const upscexamDate = new Date("2024-02-24");
   let upscdaysUntilExam = dateDiff(today, upscexamDate);
 
   setInterval(() => {
-    upscexamDate = new Date("2024-02-24");
+    daysUntilExam = dateDiff(today, examDate);
     upscdaysUntilExam = dateDiff(today, upscexamDate);
     console.log("setInterval");
-  }, 1000 * 60 * 60 * 24);
+  }, 1000 * 60 * 60);
 
   return (
     <div className="mt-[130px] ">
       <h1 className="text-red-700 text-2xl font-bold text-center">
         UPSC EXAMS
       </h1>
-      <div className="grid grid-flow-col grid-cols-2  gap-5 p-4 ">
-        <div className={`p-4 text-center bg-blue-900 rounded-md`}>
+      <div className="grid grid-flow-col grid-cols-2  gap-5 p-4">
+        <div
+          className={`p-4 text-center bg-blue-900 rounded-md hover:bg-blue-500 transition-colors`}
+        >
           <h1 className="text-xl font-semibold">Preliminary Exam</h1>
           <div className="flex justify-center items-center gap-2 mt-2">
             <CalendarToday />
@@ -47,7 +49,7 @@ const CountDown = () => {
             Offical Website <OpenInNewIcon fontSize="medium" />
           </Link>
         </div>
-        <div className="p-4 text-center bg-blue-900 rounded-md">
+        <div className="p-4 text-center bg-blue-900 rounded-md hover:bg-blue-500 transition-colors">
           <h1 className="text-xl font-semibold">UPSC Mains</h1>
           <div className="flex justify-center items-center gap-2 mt-2">
             <CalendarToday />
