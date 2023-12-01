@@ -1,0 +1,15 @@
+.lefttoright {
+  background-color: aqua;
+  animation-name: lefttoright;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lefttoright {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
