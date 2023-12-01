@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
+import CountDown from "@/components/CountDown";
+import Home from "@/components/Home";
 
 export const metadata = {
   title: "Get All Previous Papers Here",
@@ -12,7 +14,10 @@ const page = () => {
       <div>
         <Navbar />
       </div>
-      page
+      <Home />
+      <div>
+        <CountDown />
+      </div>
     </div>
   );
 };

@@ -13,3 +13,7 @@
     opacity: 100;
   }
 }
+
+.grad {
+  background: linear-gradient(0deg, #000000 0%, #040101 98%);
+}

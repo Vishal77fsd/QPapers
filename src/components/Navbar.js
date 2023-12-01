@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleClick = () => {
     setShowNavbar(() => !showNavbar);
