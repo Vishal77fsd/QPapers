@@ -13,16 +13,11 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <div>
-        <Navbar />
-      </div>
+      <div></div>
       <Home />
       <div>
         <CountDown />
         <GovernmentExam />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

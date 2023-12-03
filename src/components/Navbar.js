@@ -34,7 +34,9 @@ const Navbar = () => {
       </div>
 
       <div className="h-20 flex items-center justify-center bg-slate-800">
-        <h1 className="text-xl">QPapers</h1>
+        <h1 className="text-xl">
+          <a href="/">QPapers</a>
+        </h1>
       </div>
 
       {showNavbar && (
@@ -42,7 +44,7 @@ const Navbar = () => {
           className={`bg-slate-900 fixed w-[90vw] top-4 left-20 rounded-md lefttoright ${styles.lefttoright}`}
         >
           <ul className="flex p-2 gap-2">
-            <a href="/BA_LLB" className="text-center w-full">
+            <a href="/LLB" className="text-center w-full">
               <li className="bg-blue-800 p-1 rounded-sm">BA LLB</li>
             </a>
             <a href="/B_COM" className="text-center w-full">
