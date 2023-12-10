@@ -20,6 +20,15 @@ const CollegeCard = ({ collegeName, collegeCode }) => {
 
       <div className="flex gap-4 mt-4">
         <a
+          href={`LLB/${collegeCode}/2017-2018`}
+          className="rounded-md bg-[#3C2A21] hover:bg-[#0b0e20] "
+        >
+          <div className="p-2 text-[#D5CEA3] flex gap-2 items-center">
+            <DateRangeIcon />
+            2017-2018
+          </div>
+        </a>
+        <a
           href={`LLB/${collegeCode}/2018-2019`}
           className="rounded-md bg-[#3C2A21] hover:bg-[#0b0e20] "
         >
